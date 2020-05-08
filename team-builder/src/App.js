@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
+import MemberForm from './components/Form';
+import MemberCard from './components/MemberCard';
 
 function App() {
   const [members, setMembers] = useState([{
@@ -9,19 +11,15 @@ function App() {
     role: 'front end developer'
   }])
 
-  const addNewMember = member => {
-    const addMember = {
-      id: Date.now(),
-      name: member.name,
-      email: member.email,
-      role: member.role
-    }
-    setMembers([...members, addMemner])
-  }
+ const handleSubmit = (member) => {
+   setMembers([...members, member]);
+ };
+
   return (
     <div className='App'>
       <h1>Team Members</h1>
-      
+      <MemberForm onSubmit={handleSubmit} />
+      <MemberCard members={members} />
     </div>
   );
 }
