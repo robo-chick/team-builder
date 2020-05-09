@@ -25,33 +25,41 @@ const MemberForm = (props) => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <label htmlFor='name'>Name:</label>
-            <textarea
-            id='name'
-            type='text'
-            placeholder='Enter name'
-            value={formData.name}
-            name='name'
-            onChange={handleChange}
-            />
-            <label htmlFor='name'>EMail:</label>
-            <textarea
-            id='email'
-            type='text'
-            placeholder='Enter email'
-            value={formData.email}
-            name='email'
-            onChange={handleChange}
-            />
-            <label htmlFor='name'>Role:</label>
-            <textarea
-            id='role'
-            type='text'
-            placeholder='Enter role'
-            value={formData.role}
-            name='role'
-            onChange={handleChange}
-            />
+            <div className='entry-field'>
+                <label htmlFor='name'>Name:</label>
+                <textarea
+                id='name'
+                type='text'
+                placeholder='Enter name'
+                value={formData.name}
+                name='name'
+                onChange={handleChange}
+                />
+            </div>
+
+            <div className='entry-field'>
+                <label htmlFor='name'>EMail:</label>
+                <textarea
+                id='email'
+                type='text'
+                placeholder='Enter email'
+                value={formData.email}
+                name='email'
+                onChange={handleChange}
+                />
+            </div>
+
+            <div className='entry-field'>
+                <label htmlFor='name'>Role:</label>
+                <textarea
+                id='role'
+                type='text'
+                placeholder='Enter role'
+                value={formData.role}
+                name='role'
+                onChange={handleChange}
+                />
+            </div>
                 <button type='submit'>Add New Member</button>
         </form>
     )

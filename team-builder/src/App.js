@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import styles from './styles.css';
 import MemberForm from './components/Form';
 import MemberCard from './components/MemberCard';
 
