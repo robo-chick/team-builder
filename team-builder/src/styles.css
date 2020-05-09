@@ -1,0 +1,66 @@
+html, body, .app. #root {
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.entry-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+label {
+    font-size: 1.5rem;
+    color: darkslateblue;
+    text-align: left;
+    padding-bottom: 2%;
+
+}
+
+.team-list {
+    margin-top:2%;
+    margin-bottom: 8%;
+    display: flex;
+    justify-content: center;
+}
+
+.member {
+    border: 1px solid;
+    border-radius: 3px;
+    width: 300px;
+    padding: 1%;
+}
+
+.member h1 {
+    font-size: 2rem;
+    color: darkslateblue
+}
+
+.member h2 {
+    font-size: 1rem;
+}
+
+button {
+    border: 1px solid darkslateblue;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: darkslateblue;
+    color: white;
+}
